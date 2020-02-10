@@ -9,6 +9,7 @@
     <PackageReference Include="NETStandard.Library" Version="2.0.1" />
     <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0-beta0002" />
     <PackageReference Include="System.Drawing.Primitives" Version="4.3.0" />
+    <PackageReference Include="Taglib-Sharp-NetStandard" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
