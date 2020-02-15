@@ -23,7 +23,7 @@ namespace FileDateTimeModifier.Domain.DateTimeRetriever
                 using (var myImage = Image.Load(fs))
                 {
                     // Results in a value like YYYY/MM/DD HH:MM:SS
-                    var dateTakenAsString = myImage.MetaData.ExifProfile.Values.ToList().FirstOrDefault(v => v.Tag == SixLabors.ImageSharp.MetaData.Profiles.Exif.ExifTag.DateTimeOriginal)?.Value.ToString();
+                    var dateTakenAsString = myImage.Metadata.ExifProfile.Values.ToList().FirstOrDefault(v => v.Tag == SixLabors.ImageSharp.Metadata.Profiles.Exif.ExifTag.DateTimeOriginal)?.Value.ToString();
                     if (string.IsNullOrEmpty(dateTakenAsString))
                         return null;
 
