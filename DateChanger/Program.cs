@@ -12,8 +12,8 @@ namespace DateChanger
             Console.WriteLine("Full Folder Path Of Files To Process:");
             var baseFolderPath = Console.ReadLine();
 
-            Mp4FileProcessor.Process(ProcessMethod.ByFileName, baseFolderPath);
-            //ImageFileProcessor.Process(ProcessMethod.ByFileName, baseFolderPath);
+            //Mp4FileProcessor.Process(ProcessMethod.ByFileName, baseFolderPath);
+            ImageFileProcessor.Process(ProcessMethod.ByFileName, baseFolderPath);
             //ProcessGifFiles(baseFolderPath);
         }
         

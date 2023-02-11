@@ -98,7 +98,7 @@ namespace FileDateTimeModifier.Domain
                 {
                     using (var myImage = Image.Load(fs))
                     {
-                        myImage.Metadata.ExifProfile.SetValue(SixLabors.ImageSharp.Metadata.Profiles.Exif.ExifTag.DateTimeOriginal, dateTaken.ToString());
+                        myImage.Metadata.ExifProfile?.SetValue(SixLabors.ImageSharp.Metadata.Profiles.Exif.ExifTag.DateTimeOriginal, dateTaken.ToString());
                     }
                 }
 
