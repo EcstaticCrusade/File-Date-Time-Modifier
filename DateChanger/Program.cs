@@ -13,7 +13,7 @@ namespace DateChanger
             var baseFolderPath = Console.ReadLine();
 
             Mp4FileProcessor.Process(ProcessMethod.ByFileName, baseFolderPath);
-            //JpgFileProcessor.Process(ProcessMethod.ByDateModified, baseFolderPath);
+            //ImageFileProcessor.Process(ProcessMethod.ByFileName, baseFolderPath);
             //ProcessGifFiles(baseFolderPath);
         }
         
